@@ -111,7 +111,7 @@
 // console.log(occuranceStr("apple"))
 
 
-// ? Write a javaScript function which accepts an arguments and return the type 
+// ? Write a javaScript function which accepts an arguments and return the type
 // NOTE:  There are six possible values that typeof return object , boolean , fucniotn , number string  and undefined;
 
 
@@ -139,19 +139,98 @@
 // console.log(sum);
 
 // ? Loop an array of object and remove all objects which don't have gender's value male
-var arr = [
-  { name: "rasmi", gender: "female" },
-  { name: "roshni", gender: "female" },
-  { name: "mohit", gender: "male" },
-  { name: "sohit", gender: "male" },
-]
+// var arr = [
+//   { name: "rasmi", gender: "female" },
+//   { name: "roshni", gender: "female" },
+//   { name: "mohit", gender: "male" },
+//   { name: "sohit", gender: "male" },
+// ]
 
 
-var res = arr.filter(function (elem) {
-  return elem.gender === "male";
-})
+// var res = arr.filter(function (elem) {
+//   return elem.gender === "male";
+// })
+// console.log(res);
 
-console.log(res);
+
+// ? Write a javaScript function which accepts an arguments and return the type
+//? NOTE: there are six possible values that types return : object , boolean , function , number ,string  and undefined
+
+// function typeTeller(arg) {
+//   return typeof arg
+// }
+
+// console.log(typeTeller("abs"));
+// console.log(typeTeller(12));
+// console.log(typeTeller([]));
+// console.log(typeTeller({}));
 
 
+
+// ? Write a javaScript function to get the first element of an array . Passing a parameter 'n' will return the first 'n' element of the array
+
+// function retriveItem(arr, n = 1) {
+//   if (n <= arr.length) {
+//     for (var i = 0; i < n; i++) {
+//       console.log(arr[i]);
+//     }
+//   }
+//   else {
+//     console.log("Not available ");
+//   }
+// }
+// retriveItem([1, 2, 3, 4, 5], 3)
+
+// ? Write a javaScript function to get the first element of an array . Passing a parameter 'n' will return the last 'n' element of the array
+
+// function retriveItemEnd(arr, n = 1) {
+//   if (n <= arr.length) {
+//     for (var i = 0; i < n; i++) {
+//       console.log(arr[arr.length - 1 - i]);
+//     }
+//   }
+//   else {
+//     console.log("Not available ");
+//   }
+// }
+// retriveItemEnd([1, 2, 3, 4, 5], 3)
+
+
+// ? Write a javaScript program to find the most frequest item of an array
+
+// function mostFrequentItem(arr) {
+//   var freq = {};
+//   arr.forEach(function (i) {
+//     if (freq.hasOwnProperty(i)) {
+//       freq[i]++;
+//     }
+//     else {
+//       freq[i] = 1;
+//     }
+//   })
+
+
+//   var res = Object.keys(freq).reduce(function (acc, num) {
+//     return freq[acc] > freq[num] ? acc : num
+//   })
+//   console.log(res);
+// }
+// mostFrequentItem([1, 2, 3, 4, 5, 4, 3, 5, 6, 6, 6, 6, 6, 3, 3]);
+
+
+
+// ? write a javaScript prograam to shuffle an array
+function shuffleArray(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    // Pick a random index from 0 to i
+    const j = Math.floor(Math.random() * (i + 1));
+
+    const temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+  }
+  return arr;
+}
+
+console.log(shuffleArray([1, 2, 3, 4, 5]));
 
