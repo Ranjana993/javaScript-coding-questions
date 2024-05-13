@@ -1,4 +1,3 @@
-//  Question 1
 //? Question 1 Given a string , reverse each words in the sentences
 
 // let str = "Hello world how are you doing";
@@ -220,17 +219,16 @@
 
 
 // ? write a javaScript prograam to shuffle an array
-function shuffleArray(arr) {
-  for (let i = arr.length - 1; i > 0; i--) {
-    // Pick a random index from 0 to i
-    const j = Math.floor(Math.random() * (i + 1));
+// function shuffleArray(arr) {
+//   for (let i = arr.length - 1; i > 0; i--) {
+//     const j = Math.floor(Math.random() * (i + 1));
 
-    const temp = arr[i];
-    arr[i] = arr[j];
-    arr[j] = temp;
-  }
-  return arr;
-}
+//     const temp = arr[i];
+//     arr[i] = arr[j];
+//     arr[j] = temp;
+//   }
+//   return arr;
+// }
 
-console.log(shuffleArray([1, 2, 3, 4, 5]));
+// console.log(shuffleArray([1, 2, 3, 4, 5]));
 
