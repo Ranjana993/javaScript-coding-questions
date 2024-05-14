@@ -69,4 +69,50 @@
 // console.log(checkPrime(4));
 
 
-// ? 8. Write a JavaScript program to find the largest element in a nested array. 
+// ? 8. Write a JavaScript program to find the largest element in a nested array.
+
+// function findLargestElement(arr) {
+//   let largest = -Infinity;
+//   function checkElement(element) {
+//     if (Array.isArray(element)) {
+//       element.forEach(checkElement);
+//     } else if (element > largest) {
+//       largest = element;
+//     }
+//   }
+//   arr.forEach(checkElement);
+//   return largest;
+// }
+
+// console.log(findLargestElement([1, 5, 3, 2, 5, 6, [8, 6, 2, 3]]));
+
+
+// ? 9. Write a JavaScript function that returns the Fibonacci sequence up to a given number of terms.
+
+// function findFibbonachi(num) {
+//   if (num <= 0) {
+//     return [];
+//   }
+//   if (num == 1) {
+//     return [0]
+//   }
+//   const fibb = [0, 1];
+//   for (let i = 2; i < num; i++) {
+//     fibb[i] = fibb[i - 1] + fibb[i - 2];
+//   }
+//   return fibb;
+// }
+// console.log(findFibbonachi(10));
+
+
+
+// ? 10. Write a JavaScript program to convert a string to title case (capitalize the first letter of each word).
+// function convertToUpperCase(str) {
+//   var ans = str.split(" ").map(function (word) {
+//     return word.charAt(0).toUpperCase() + word.substring(1);
+//   })
+//   return ans.join(" ");
+// }
+// console.log(convertToUpperCase("mango orange litchi"));
+
+
